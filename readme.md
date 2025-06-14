@@ -31,3 +31,14 @@ open index.html
 ## 📸 Screenshot
 ![image](https://github.com/user-attachments/assets/87ead930-8a89-44e7-96e9-eeb439503b1a)
 
+##🔹 Notes
+
+Currently, this is not responsive for mobile or small screens.
+
+## All functionality is implemented without additional libraries or frameworks.
+
+📚 Future Improvement Ideas
+✅ Implement responsiveness
+✅ Support for multiple carousels (genres or categories)
+✅ Implement hover details or preview popup
+✅ Integration with a back-end or API for real content
