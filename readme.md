@@ -21,7 +21,7 @@
 1. **Clone this repository**:
 
 ```bash
-git clone https://github.com/your-username/netflix-clone-2025.git
+git clone https://github.com/kaival775/netflix-2025-clone.git
 ```
 2. **Open index.html in your browser**:
 
