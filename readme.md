@@ -22,3 +22,12 @@
 
 ```bash
 git clone https://github.com/your-username/netflix-clone-2025.git
+```
+2. **Open index.html in your browser**:
+
+```bash
+open index.html
+```
+## 📸 Screenshot
+![image](https://github.com/user-attachments/assets/87ead930-8a89-44e7-96e9-eeb439503b1a)
+
