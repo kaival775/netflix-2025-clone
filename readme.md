@@ -31,7 +31,7 @@ open index.html
 ## 📸 Screenshot
 ![image](https://github.com/user-attachments/assets/87ead930-8a89-44e7-96e9-eeb439503b1a)
 
-##🔹 Notes
+## 🔹 Notes
 
 Currently, this is not responsive for mobile or small screens.
 
