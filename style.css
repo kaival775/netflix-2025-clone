@@ -1,0 +1,599 @@
+/* Global Reset */
+:root{
+--textColor:#ffffffbd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    overflow-y: scroll;
+}
+
+
+.mainContainer {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.mainContainer::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: url(https://assets.nflxext.com/ffe/siteui/vlv3/6863f6e8-d419-414d-b5b9-7ef657e67ce4/web/IN-en-20250602-TRIFECTA-perspective_27a3fdfa-126f-4148-b153-55d60b51be6a_large.jpg) no-repeat center center / cover;
+    filter: brightness(0.4);
+    z-index: 0;
+    box-shadow: inset 0px 0px 175px 63px rgb(0 0 0 / 85%);
+}
+
+nav {
+    position: relative;
+    z-index: 1;
+    padding: 20px 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 160px;
+    height: auto;
+    object-fit: contain;
+}
+
+.langSvg{
+    color: white;
+    position: relative;
+    left: 30px;
+    top: 2px;
+}
+
+.navLanaguageContainer {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+}
+
+nav select {
+    z-index: 1;
+    -webkit-appearance: none;
+    color: white;
+    background: #1a191999;
+    border-radius: 5px;
+    width: 130px;
+    height: 33px;
+    text-align: center;
+    font-size: 17px;
+}
+
+.selectArrow{
+    position: relative;
+    top: 3px;
+    right: 35px;
+    color: white;
+}
+
+
+nav option {
+    color: black;
+    background-color: white;
+}
+
+nav button {
+    background: red;
+    padding: 10px;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    height: 33px;
+    width: 85px;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.heroContainer{
+    position: relative;
+    top: 50%;
+    left: 0%;
+    color: white;
+    text-align: center;
+}
+
+.heroContent{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 85px;
+    h1{
+        font-size: 50px;
+            font-weight: 800;
+    }
+    h2{
+        font-size: 20px;
+    }
+    p{
+        margin-top: 20px;
+    }
+}
+
+.email_input input{
+    height: 60px;
+    font-size: 16px;
+    width: 380px;
+    background-color: #151515c7;
+    text-align: left;
+    border: 1px solid #ffffff6b;
+    padding-left: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.email_input input::placeholder{
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+.email_start_button{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.getStartedButton button{
+    background-color: red;
+    color: white;
+    height: 60px;
+    width: 200px;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 22px;
+}
+
+.curve{
+    box-sizing: border-box;
+    overflow-x: hidden;
+    position: relative;
+    height: 7.75rem;
+    z-index: 1;
+    top: 130px;
+}
+
+.curveContainer{
+    left: -20%;
+    width: 140%;
+    box-sizing: border-box;
+    position: absolute;
+    height: 100%;
+    top: 0;
+    margin: auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border: solid .25rem transparent;
+    border-top-left-radius: 50% 100%;
+    border-top-right-radius: 50% 100%;
+    border-bottom: none;
+    background: radial-gradient(50% 500% at 50% -420%, rgba(64, 97, 231, 0.4) 80%, rgba(0, 0, 0, 0.1) 100%), black;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+}
+.curveContainer::before{
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    margin-top: -.25rem;
+    border-radius: inherit;
+    background: linear-gradient(to right, rgba(33, 13, 22, 1) 16%, rgba(184, 40, 105, 1), rgba(229, 9, 20, 1), rgba(184, 40, 105, 1), rgba(33, 13, 22, 1) 84%);
+}
+
+.content{
+    background-color: black;
+    /* height: 100vh; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.contentContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 82%;
+}
+
+.trending{
+    width: 100%;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.trendingContainer{
+    width: 100%;
+    position: relative;
+    h2{
+        color: white;
+    }
+}
+
+.trendingInnerContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.trendingCards{
+    width: 100%;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    gap: 50px;
+    padding: 20px;
+}
+
+
+.trendingCards::-webkit-scrollbar {
+    display: none; 
+}
+
+.trendingCard{
+    flex: 0 0 auto;
+  border-radius: 12px;
+  color: #000;
+  transform: scale(1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+    img{
+        border-radius: 10px;
+        height: 235px;
+    }
+
+}
+
+.trendingCard:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+.trendingNumber{
+    position: absolute;
+    left: -33px;
+    top: 100px;
+    font-size:90px;
+    font-weight: 800;
+    padding: 10px;
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.25rem rgb(255, 255, 255);
+    text-shadow: 0 0 1.5rem rgba(0, 0, 0, 0.5);
+}
+
+.trending #scrollLeft,
+.trending #scrollRight {
+    transform: translateX(0);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+}
+
+.trending #scrollLeft {
+    transform: translateX(-50px);
+}
+
+.trending #scrollRight {
+    transform: translateX(50px) ;
+}
+
+.trending #scrollLeft[style*='block'],
+.trending #scrollRight[style*='block'] {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.buttonLeft{
+    background-color: black;
+ margin: 8px;
+}
+
+
+.buttonRight{
+    background-color: black;
+    margin: 8px;
+}
+
+.trending button {
+    font-family: cursive;
+    font-size: 20px;
+    width: 25px;
+    height: 130px;
+    background: #1f1f1f;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 4px 14px rgb(0 0 0 / 0.5);
+}
+
+.trending button:hover{
+    background-color: #313131;
+}
+
+
+.reasons{
+    padding-top: 20px;
+    width: 100%;
+}
+
+.reasonContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reasonTitle{
+    width: 100%;
+    text-align: left ;
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+
+.reasonCards{
+    padding-top: 15px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+}
+
+.reasonCard{
+    height: 300px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+    border-radius: 15px;
+    padding:30px 20px 5px 20px;
+    color: white;
+    background: linear-gradient(149deg, #192247 0%, #210e17 96.86%)
+}
+
+.reason{
+    font-weight: 700;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.reasonDesc{
+    color: #ada9ab;
+    flex: 1;
+    font-size: 16px;
+}
+
+.reasonImg{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    font-weight: 300;
+}
+
+.questions{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.questionsContainer{
+    width: 100%;
+}
+
+.questionTitle{
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.questionsCards{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.questionCard{
+    background-color: rgb(44, 44, 44);
+    width: 100%;
+    padding: 15px 30px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition-duration: 220ms;
+    transition-property: background-color;
+    transition-timing-function: cubic-bezier(0.4,0,0.68,0.06);
+}
+
+.questionCard:hover{
+    cursor: pointer;
+    background-color: #404040;
+}
+
+.question{
+    font-size: 25px;
+    font-weight: 500;
+    color: white;
+}
+
+.plus{
+    /* font-family: auto; */
+    font-size: 50px;
+    color: white;
+}
+
+.desc{
+    padding: 20px;
+    color: white;
+    font-size: 28px;
+    font-family: sans-serif;
+    display: none;
+    background-color: #2c2c2c;
+}
+.end{
+    width: 100%;
+
+}
+
+.endContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.endTitle{
+    color: white;
+    font-size: 17px;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+.email_end_button{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;    
+}
+
+
+.email_input_end input{
+    height: 60px;
+    font-size: 16px;
+    width: 600px;
+    background-color: #151515c7;
+    text-align: left;
+    border: 1px solid #ffffff6b;
+    padding-left: 20px;
+    border-radius: 4px;
+    color: #ffffff;
+}
+
+.email_input_end input::placeholder{
+    color: var(--textColor);
+    opacity: 0.8;
+}
+
+.footer{
+    margin-top: 60px;
+    width: 100%;
+}
+
+.footerContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.footerTitle{
+    color: var(--textColor);
+    a{
+        color: var(--textColor);
+    }
+}
+
+.linksContainer{
+    width: 100%;
+}
+
+.links{
+    font-size: 14px;
+    a{
+        color: var(--textColor);
+    }
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px;
+    grid-template-rows: 30px 30px 30px 30px;
+}
+
+.footerLanguageContainer select{
+    z-index: 1;
+    -webkit-appearance: none;
+    color: white;
+    background: #1a191999;
+    border-radius: 5px;
+    width: 130px;
+    height: 33px;
+    text-align: center;
+    font-size: 15px;
+    position: relative;
+}
+
+.footerLanguageContainer option{
+    background-color: white;
+    color: black;
+}
+
+.langSvgEnd{
+    color: white;
+    top: 28px;
+    left: 12px;
+    position: relative;
+}
+
+.selectArrowEnd{
+    color: white;
+    position: relative;
+    left: 100px;
+    bottom: 25px;
+}
+
+.footerText{
+    color: var(--textColor);
+    margin: 30px 0px;
+}
+
+.learnMore{
+    color: gray;
+    font-size: 13px;
+    a{
+        color: rgb(30, 135, 255);
+    }
+    height: 150px;
+}
+
+
+ 
